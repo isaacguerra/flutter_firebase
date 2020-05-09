@@ -40,6 +40,16 @@ mixin _$AppController on _AppControllerBase, Store {
   }
 
   @override
+  void LogOut() {
+    final _$actionInfo = _$_AppControllerBaseActionController.startAction();
+    try {
+      return super.LogOut();
+    } finally {
+      _$_AppControllerBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
   String toString() {
     final string = 'currentUser: ${currentUser.toString()}';
     return '{$string}';

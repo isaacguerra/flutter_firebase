@@ -1,0 +1,5 @@
+lib/app/modules/noticias/noticias_module.dart
+lib/app/modules/noticias/noticias_page.dart
+test/app/modules/noticias/noticias_page_test.dart
+lib/app/modules/noticias/noticias_controller.dart
+test/app/modules/noticias/noticias_controller_test.dart

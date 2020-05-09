@@ -30,4 +30,8 @@ class AuthService {
     print("signed in " + user.displayName);
     return user;
   }
+
+  Future logOut() async {
+    await _auth.signOut();
+  }
 }

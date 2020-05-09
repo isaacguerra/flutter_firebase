@@ -48,11 +48,11 @@ class MyDrawerWidget extends StatelessWidget {
                   ),
                   ListTile(
                       leading: Icon(Icons.star),
-                      title: Text("Favoritos"),
+                      title: Text("Noticias"),
                       subtitle: Text("meus favoritos..."),
                       trailing: Icon(Icons.arrow_forward),
                       onTap: () {
-                        debugPrint('toquei no drawer');
+                        Modular.to.pushNamed('/noticias');
                       }),
                   ListTile(
                       leading: Icon(Icons.account_circle),

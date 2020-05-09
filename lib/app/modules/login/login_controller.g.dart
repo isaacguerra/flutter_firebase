@@ -23,6 +23,36 @@ mixin _$LoginController on _LoginControllerBase, Store {
   }
 
   @override
+  void onChangeEmail(dynamic value) {
+    final _$actionInfo = _$_LoginControllerBaseActionController.startAction();
+    try {
+      return super.onChangeEmail(value);
+    } finally {
+      _$_LoginControllerBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void onChangePassword(dynamic value) {
+    final _$actionInfo = _$_LoginControllerBaseActionController.startAction();
+    try {
+      return super.onChangePassword(value);
+    } finally {
+      _$_LoginControllerBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  bool loginEmailSenha() {
+    final _$actionInfo = _$_LoginControllerBaseActionController.startAction();
+    try {
+      return super.loginEmailSenha();
+    } finally {
+      _$_LoginControllerBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
   String toString() {
     final string = '';
     return '{$string}';
